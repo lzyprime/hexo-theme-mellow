@@ -53,3 +53,4 @@ QQ群：527753185
 [YuanLiChenAi](https://www.yuanlichenai.cn/) - https://www.yuanlichenai.cn/
 
 [Zip的小窝](https://ourfor.top/) - https://ourfor.top/
+npm install --save hexo-generator-search hexo-generator-topindex hexo-helper-qrcode hexo-renderer-less

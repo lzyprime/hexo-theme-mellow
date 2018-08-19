@@ -40,7 +40,7 @@ daovoice:
 # 主页文章排序方式
 ## true 按照文章更新时间排序
 ## false 按照文章创建时间排序
-articleSort: false
+articleSort: true
 
 # 站浏览数统计
 visit_counter: 
@@ -54,7 +54,7 @@ visit_counter:
 #####################
 
 # 头像
-avatar: /img/avatar.jpg
+avatar: /img/head_icon.jpg
 
 # 头像点击后的链接地址
 avatar_link: / #默认为主页
@@ -63,14 +63,16 @@ avatar_link: / #默认为主页
 brand: /img/brand.jpg
 
 # 电子邮件
-email: 277133779@qq.com
+email: 2383518170@qq.com
 
 # 电子邮件下方的链接图标
 ## 新连接规则[name]: url | icon
 ## 使用fontawesome图标，只需要写图标名。github -> icon-github | fa-github
 ## http://http://fontawesome.dashgame.com/
 menu_link: 
-  github: https://github.com/codefine | github
+  github: https://github.com/lzyprime | github
+  qq: https://user.qzone.qq.com/2383518170 | qq
+  music: https://music.163.com/#/user/home?id=395181365 | music
 
 # 添加新菜单项遵循以下规则
 ## menu:
@@ -81,31 +83,39 @@ menu_link:
 ##    target: _blank    [必要][不渲染] 是否跳出，省略则在当前页面打开
 menu:
   home:
-    text: HOME
+    text: 主页
     url: /
     icon: home
+  notebook:
+    text: 笔记列表
+    url: /notebook
+    icon: stack-overflow
+  repo_list:
+      text: 项目列表
+      url: /repolist
+      icon: code
   th-list:
-    text: CATEGORIES
+    text: 文章分类
     url: /categories
     icon: th-list
   tags:
-    text: TAGS
+    text: 标签
     url: /tags
     icon: tags
   archives:
-    text: ARCHIVES
+    text: 所有文章
     url: /archives
     icon: archives
-  #about:
-    #text: ABOUT
-    #url: /about
-    #icon: user
-  demo:
-    text: CUSTOM
-    url: /custom
-    icon: plus-square
-  #github:
-    #url: https://github.com/codefine
+  about:
+    text: 我
+    url: /about
+    icon: user
+    #demo:
+    #text: CUSTOM
+    #url: /custom
+    #icon: plus-square
+    #github:
+    #url: https://github.com/lzyprime
     #target: _blank
     #icon: github
   #weibo:
@@ -147,7 +157,7 @@ defaultthumb: true
 ## 显示在主页中
 ## excerpt_length只在excerpt_render为true时生效。
 ## excerpt_render为false时可进行手动截断。方法为在文章的markdown文件中加入<!--more-->，其之前的内容视为摘要部分。
-excerpt_render: false   #自动截断
+excerpt_render: true   #自动截断
 excerpt_length: 200     #截断长度
 excerpt_link: more      #更多按钮内容
 
@@ -164,9 +174,9 @@ postMessage: 转载注明出处，原文地址：<a href="<%- url_for(page.path)
 ## 可以在文章markdown中设置reward: false来取消本篇文章的打赏功能
 ## 全局取消直接注释下方配置
 reward:
-  title: 我们一起来让这个世界有趣一点
-  wechat: /img/reward-wechat.jpg     #微信
-  alipay: /img/reward-alipay.jpg     #支付宝
+  title: 打赏次要，喜欢文章就好
+  wechat: /img/wechat.jpg     #微信
+  alipay: /img/alipay.jpg     #支付宝
 
 # 分享
 ## 内置6种分享途径，不需要的设置对应的为false
@@ -196,17 +206,17 @@ toc:
 # 友情链接
 blogroll:
   item1:
-    name: HOME
-    url: https://www.lujingtao.com
-  #item2:
-    #name: gitee
-    #url: https://www.gitee.com
+    name: 主页
+    url: https://lzyprime.github.io
+  item2:
+    name: gitee
+    url: https://gitee.com/lzyprime
   #item3:
     #name: coding
     #url: https://www.coding.net
 
 # 版权起始年份
-since_year: 2017
+since_year: 2018
 
 # icp备案号
 ## 例如ICP_license: 京ICP备123456号
@@ -238,7 +248,7 @@ baidu_tongji: #appid
 gitment:
   enable: false
   lazy: true #是否开启初始化隐藏评论
-  owner: codefine #github账号
+  owner: lzyprime #github账号
   repo: gitment #留言仓库
   oauth: 
     client_id: #client_id

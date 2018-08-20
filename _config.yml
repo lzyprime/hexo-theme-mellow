@@ -23,9 +23,9 @@ favicon: /img/favicon.ico
 headerBg: /img/banner.jpg
 
 # 动态定义title
-#title_change:
-  #normal: (つェ⊂)咦!又好了!     #页面获得焦点时显示(短暂存在)
-  #leave: 死鬼去哪里了！         #页面失去焦点后显示
+title_change:
+  normal: 加载成功         #页面获得焦点时显示(短暂存在)
+  leave: I'm prime         #页面失去焦点后显示
 
 # 规范网址
 ## 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径
@@ -57,7 +57,7 @@ visit_counter:
 avatar: /img/head_icon.jpg
 
 # 头像点击后的链接地址
-avatar_link: / #默认为主页
+avatar_link: /about #默认为主页
 
 # 头像区域背景图
 brand: /img/brand.jpg
@@ -68,11 +68,11 @@ email: 2383518170@qq.com
 # 电子邮件下方的链接图标
 ## 新连接规则[name]: url | icon
 ## 使用fontawesome图标，只需要写图标名。github -> icon-github | fa-github
-## http://http://fontawesome.dashgame.com/
+## http://fontawesome.dashgame.com/
 menu_link: 
   github: https://github.com/lzyprime | github
-  qq: https://user.qzone.qq.com/2383518170 | qq
   music: https://music.163.com/#/user/home?id=395181365 | music
+  简书: https://www.jianshu.com/u/3ce5b376d814 | book
 
 # 添加新菜单项遵循以下规则
 ## menu:
@@ -110,6 +110,10 @@ menu:
     text: 我
     url: /about
     icon: user
+  gitee:
+    text: 码云主页
+    url: https://lzyprime.gitee.io
+    icon: link
     #demo:
     #text: CUSTOM
     #url: /custom
@@ -146,9 +150,9 @@ top_icon: true
 # 页面标题
 ## 标签页 / 分类页 / 归档页的标题只能在这里设置
 ## 其他自定义页面标题在页面markdown文件的title中设置
-tags_title: Tags              #标签页
-categories_title: Categories  #分类页
-archives_title: Archives      #归档页
+tags_title: 标签             #标签页
+categories_title: 分类       #分类页
+archives_title: 所有文章     #归档页
 
 # 主页文章摘要缩略图
 defaultthumb: true
@@ -158,7 +162,7 @@ defaultthumb: true
 ## excerpt_length只在excerpt_render为true时生效。
 ## excerpt_render为false时可进行手动截断。方法为在文章的markdown文件中加入<!--more-->，其之前的内容视为摘要部分。
 excerpt_render: true   #自动截断
-excerpt_length: 200     #截断长度
+excerpt_length: 5     #截断长度
 excerpt_link: more      #更多按钮内容
 
 # 是否显示文章最后更新时间
@@ -209,11 +213,20 @@ blogroll:
     name: 主页
     url: https://lzyprime.github.io
   item2:
-    name: gitee
+    name: 简书
+    url: https://www.jianshu.com/u/3ce5b376d814
+  item3:
+    name: csdn
+    url: https://blog.csdn.net/prime_liu
+  item4:
+    name: gitee 主页
+    url: https://lzyprime.gitee.io
+  item5:
+    name: github 仓库
+    url: https://github.com/lzyprime
+  item6:
+    name: gitee 仓库
     url: https://gitee.com/lzyprime
-  #item3:
-    #name: coding
-    #url: https://www.coding.net
 
 # 版权起始年份
 since_year: 2018

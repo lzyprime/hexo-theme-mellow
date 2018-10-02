@@ -86,10 +86,6 @@ menu:
     text: 主页
     url: /
     icon: home
-  notebook:
-    text: 笔记列表
-    url: /notebook
-    icon: stack-overflow
   repo_list:
       text: 项目列表
       url: /repolist
@@ -106,6 +102,10 @@ menu:
     text: 所有文章
     url: /archives
     icon: archives
+  notebook:
+    text: 我的笔记
+    url: https://lzyprime.github.io/notebook
+    icon: stack-overflow
   about:
     text: 我
     url: /about
@@ -155,7 +155,7 @@ categories_title: 分类       #分类页
 archives_title: 所有文章     #归档页
 
 # 主页文章摘要缩略图
-defaultthumb: true
+defaultthumb: false
 
 # 自动生成文章摘要
 ## 显示在主页中
